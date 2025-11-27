@@ -1,0 +1,26 @@
+{
+  "name": "langchain-bugs",
+  "version": "1.0.0",
+  "description": "Reproduction repository for LangChain/LangGraph 1.x MCP bugs with OpenAI",
+  "type": "module",
+  "scripts": {
+    "01:mcp-tools-basic": "tsx src/01-mcp-tools-basic/index.ts",
+    "02:mcp-structured-output": "tsx src/02-mcp-structured-output/index.ts",
+    "03:mcp-middleware": "tsx src/03-mcp-middleware/index.ts"
+  },
+  "dependencies": {
+    "langchain": "^1.1.1",
+    "@langchain/core": "^1.0.6",
+    "@langchain/langgraph": "^1.0.2",
+    "@langchain/mcp-adapters": "^1.0.0",
+    "@langchain/openai": "^1.1.0",
+    "zod": "^4.1.13",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
+
