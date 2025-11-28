@@ -12,6 +12,7 @@ import "dotenv/config";
 import { createAgent } from "langchain";
 import { z } from "zod";
 import { MultiServerMCPClient } from "@langchain/mcp-adapters";
+import {ChatOpenAI} from "@langchain/openai";
 
 // Define a simple structured output schema
 const SearchResultSchema = z.object({
@@ -40,7 +41,10 @@ async function main() {
 
     // Create agent with responseFormat - this will fail
     const agent = createAgent({
-      model: "openai:gpt-5.1",
+      //Note using model: "openai:gpt-5.1" does not cause issues
+      model: new ChatOpenAI({
+        model: 'gpt-5.1',
+      }),
       tools,
       responseFormat: SearchResultSchema,
     });
