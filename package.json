@@ -6,7 +6,8 @@
   "scripts": {
     "01:mcp-tools-basic": "tsx src/01-mcp-tools-basic/index.ts",
     "02:mcp-structured-output": "tsx src/02-mcp-structured-output/index.ts",
-    "03:mcp-middleware": "tsx src/03-mcp-middleware/index.ts"
+    "03:mcp-middleware": "tsx src/03-mcp-middleware/index.ts",
+    "04:google-gauth-structured-output": "tsx src/04-google-gauth-structured-output/index.ts"
   },
   "dependencies": {
     "langchain": "^1.1.1",
@@ -14,6 +15,7 @@
     "@langchain/langgraph": "^1.0.2",
     "@langchain/mcp-adapters": "^1.0.0",
     "@langchain/openai": "^1.1.0",
+    "@langchain/google-webauth": "^2.1.0",
     "zod": "^4.1.13",
     "dotenv": "^17.0.0"
   },
